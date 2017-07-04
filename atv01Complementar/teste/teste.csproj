@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{32472392-33D9-4C7D-A6BD-BF5EDA90B800}</ProjectGuid>
+    <ProjectGuid>{2957B06B-65CF-4545-8336-2F03679E6B1D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>atv02Complementar</RootNamespace>
-    <AssemblyName>atv02Complementar</AssemblyName>
+    <RootNamespace>teste</RootNamespace>
+    <AssemblyName>teste</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,9 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conta.cs" />
-    <Compile Include="ContaPoupanca.cs" />
-    <Compile Include="ContaRendaFixa.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
