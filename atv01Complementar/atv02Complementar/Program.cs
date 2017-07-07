@@ -38,14 +38,14 @@ namespace CalculadoraFinanceira
 
             foreach (var listaP in contaPoupanca.ListaJurosMes)
             {
-                Console.WriteLine("Juros mês poupança {0}", listaP);
+                Console.WriteLine("Juros mês poupança {0 :0.##}", listaP);
             }
 
             Console.WriteLine("\n============================================================");
 
             foreach (var listaR in contaRendaFixa.ListaJurosMes)
             {
-                Console.WriteLine("Juros mês Renda Fixa {0}", listaR);
+                Console.WriteLine("Juros mês Renda Fixa {0 :0.##}", listaR);
             }
 
             Console.WriteLine("\n============================================================");
@@ -60,11 +60,11 @@ namespace CalculadoraFinanceira
 
             if (contaPoupanca.ValorTotal > contaRendaFixa.TotalComIR)
             {
-                Console.WriteLine("Nós indicamos o investimento em Conta Poupança, com rendimento de: {0}", contaPoupanca.ValorTotal - contaPoupanca.ValorInvestido);
+                Console.WriteLine("Nós indicamos o investimento em Conta Poupança, com rendimento de: {0 :0.##}", contaPoupanca.ValorTotal - contaPoupanca.ValorInvestido);
             }
             else if (contaPoupanca.ValorTotal < contaRendaFixa.TotalComIR)
             {
-                Console.WriteLine("Nós indicamos o investimento em Renda Fixa, com rendimento de: {0}", contaRendaFixa.TotalComIR - contaRendaFixa.ValorInvestido);
+                Console.WriteLine("Nós indicamos o investimento em Renda Fixa, com rendimento de: {0 :0.##}", contaRendaFixa.TotalComIR - contaRendaFixa.ValorInvestido);
             }
             else
                 Console.WriteLine("Os dois investimentos rendem o mesmo valor.");
